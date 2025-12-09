@@ -1,0 +1,138 @@
+{
+  "version": "1.0",
+  "servers": {
+    "github": {
+      "name": "GitHub MCP Server",
+      "type": "github",
+      "repository": "theaioniqlabs/Aioniq",
+      "endpoint": {
+        "url": "https://api.githubcopilot.com/mcp/",
+        "type": "github-copilot"
+      },
+      "authentication": {
+        "method": "bearer",
+        "tokenSource": "config",
+        "tokenEnvVar": "GITHUB_TOKEN"
+      },
+      "capabilities": {
+        "read": {
+          "enabled": true,
+          "methods": [
+            "repo.read",
+            "file.read",
+            "branch.list",
+            "commit.read"
+          ]
+        },
+        "write": {
+          "enabled": true,
+          "requireApproval": true,
+          "methods": [
+            "file.write",
+            "pr.create",
+            "issue.create",
+            "commit.create"
+          ]
+        }
+      },
+      "metadata": {
+        "description": "GitHub MCP server for AiONIQ repository integration via GitHub Copilot API",
+        "contact": "devops@aioniq.example.com",
+        "docs": "docs/mcp/github-setup.md"
+      }
+    },
+    "tavily": {
+      "name": "Tavily MCP Server",
+      "type": "tavily",
+      "endpoint": {
+        "url": "https://tavily.api.tadata.com/mcp/tavily/noun-stream-donut-skpasx",
+        "type": "tavily-api"
+      },
+      "authentication": {
+        "method": "api-key",
+        "apiKeyEnvVar": "TAVILY_API_KEY"
+      },
+      "capabilities": {
+        "search": {
+          "enabled": true,
+          "description": "Structured web search and content extraction"
+        }
+      }
+    },
+    "firecrawl": {
+      "name": "Firecrawl MCP Server",
+      "type": "firecrawl",
+      "command": {
+        "type": "npx",
+        "package": "firecrawl-mcp"
+      },
+      "authentication": {
+        "method": "api-key",
+        "apiKeyEnvVar": "FIRECRAWL_API_KEY"
+      },
+      "capabilities": {
+        "crawl": {
+          "enabled": true,
+          "description": "Crawl and extract content from websites"
+        },
+        "scrape": {
+          "enabled": true,
+          "description": "Scrape individual pages"
+        }
+      }
+    },
+    "magic": {
+      "name": "Magic MCP Server",
+      "type": "magic",
+      "command": {
+        "type": "npx",
+        "package": "21st-dev/magic@latest"
+      },
+      "authentication": {
+        "method": "api-key",
+        "apiKeyEnvVar": "MAGIC_API_KEY"
+      },
+      "capabilities": {
+        "component-generation": {
+          "enabled": true,
+          "description": "Generate UI components from descriptions"
+        },
+        "ui-automation": {
+          "enabled": true,
+          "description": "Automate frontend UI tasks"
+        }
+      }
+    }
+  },
+  "cursorConfig": {
+    "mcpServers": {
+      "github": {
+        "url": "https://api.githubcopilot.com/mcp/",
+        "headers": {
+          "Authorization": "Bearer ${GITHUB_TOKEN}"
+        }
+      },
+      "tavily": {
+        "url": "https://tavily.api.tadata.com/mcp/tavily/noun-stream-donut-skpasx",
+        "headers": {
+          "X-API-Key": "${TAVILY_API_KEY}"
+        }
+      },
+      "firecrawl-mcp": {
+        "command": "npx",
+        "args": ["-y", "firecrawl-mcp"],
+        "env": {
+          "FIRECRAWL_API_KEY": "${FIRECRAWL_API_KEY}"
+        }
+      },
+      "magic-mcp": {
+        "command": "npx",
+        "args": ["-y", "21st-dev/magic@latest"],
+        "env": {
+          "MAGIC_API_KEY": "${MAGIC_API_KEY}"
+        }
+      }
+    }
+  }
+}
+

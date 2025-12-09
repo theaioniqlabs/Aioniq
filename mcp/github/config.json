@@ -1,0 +1,47 @@
+{
+  "server": {
+    "name": "github-mcp",
+    "version": "1.0.0",
+    "description": "GitHub Model Context Protocol server for theaioniqlabs/Aioniq repository"
+  },
+  "repository": {
+    "owner": "theaioniqlabs",
+    "name": "Aioniq",
+    "fullName": "theaioniqlabs/Aioniq",
+    "url": "https://github.com/theaioniqlabs/Aioniq"
+  },
+  "authentication": {
+    "type": "token",
+    "tokenEnvVar": "GITHUB_TOKEN",
+    "apiUrl": "https://api.github.com"
+  },
+  "capabilities": {
+    "read": {
+      "enabled": true,
+      "scopes": [
+        "repo.read",
+        "contents.read",
+        "metadata.read"
+      ]
+    },
+    "write": {
+      "enabled": true,
+      "scopes": [
+        "repo.write",
+        "contents.write",
+        "pull_requests.write",
+        "issues.write"
+      ],
+      "requireApproval": true
+    }
+  },
+  "endpoints": {
+    "local": "http://localhost:7001",
+    "wellKnown": "/.well-known/mcp"
+  },
+  "rateLimiting": {
+    "enabled": true,
+    "requestsPerMinute": 60
+  }
+}
+

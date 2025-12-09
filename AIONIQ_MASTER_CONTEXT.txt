@@ -1,0 +1,191 @@
+AIONIQ LABS — MASTER CONTEXT
+
+⸻
+
+WHAT AIONIQ IS
+
+AiONIQ Labs is a hybrid digital studio + intelligent product environment.
+It blends:
+	•	AI engineering
+	•	Brand systems
+	•	Design excellence
+	•	High-end web-app UI
+	•	Portfolio-level visual storytelling
+
+The website behaves like a Single Page Application (SPA) but feels like a premium design portfolio.
+A union of Apple × Stripe × OpenAI × Linear — clean, intelligent, futuristic.
+
+⸻
+
+WHAT THE SITE MUST ACHIEVE
+
+The AiONIQ site needs to be:
+	•	Visually premium
+	•	Functionally modern
+	•	Smooth like a web-app
+	•	Scalable like a product
+	•	Fast and minimal
+	•	Carefully animated
+	•	Responsive up to 1800px
+
+Content must be clear, structured, and intentional.
+
+⸻
+
+TECH STACK
+
+All suggestions, components, or code should assume:
+	•	Next.js App Router
+	•	TailwindCSS
+	•	shadcn/ui
+	•	Framer Motion
+	•	Optional Spline 3D (only for meaningful visuals)
+	•	Responsive mobile-first design
+	•	Typed React components (TS)
+
+⸻
+
+LAYOUT & CONTAINER STRUCTURE
+
+AiONIQ uses a multi-container system, not one fixed max-width.
+
+1. Marketing/Text Sections
+	•	max-width: 1280px
+	•	Best for paragraphs, stories, service explanations
+	•	Keep line length ± 55–75 characters
+
+2. Visual/Bento Sections
+	•	max-width: 1440px
+	•	Used for feature blocks, bento cards, visual storytelling
+
+3. Showcase/Hero Sections
+	•	max-width: 1600px → 1728px
+	•	Used for animated hero, 3D sections, large visuals
+
+4. App Mode (future dashboard)
+	•	max-width: up to 1800px
+	•	Only used for product-like UI
+
+Padding rules
+	•	Desktop: 40–48px
+	•	Tablet: 24–32px
+	•	Mobile: 16–20px
+
+⸻
+
+TYPOGRAPHY SYSTEM
+
+Font families:
+	•	Display: Sora
+	•	Sans: Inter
+
+Sizes:
+	•	Display-1: 48/56
+	•	H1: 36/44
+	•	H2: 28/36
+	•	H3: 20/28
+	•	Body-md: 16/24
+	•	Body-sm: 14/20
+
+Line-length must be readable — never too wide.
+
+⸻
+
+COLOR SYSTEM
+
+Neutral, premium, minimal:
+
+--foreground: #0A0A0A
+--background: #FFFFFF
+--primary: #0A0A0A
+--primary-foreground: #FFFFFF
+--border: #E6E9EB
+--muted: #6B7280
+--accent: hsl(195 90% 55%)
+
+Dark mode optional.
+
+⸻
+
+ANIMATION RULES (Framer Motion)
+
+AiONIQ uses micro-interactions, not dramatic animations.
+	•	Easing: cubic-bezier(.2,.9,.22,1)
+	•	Subtle hover lift (4–6px)
+	•	Smooth section fade-in
+	•	Bento grids use staggered reveal
+	•	No bouncy or cartoonish effects
+	•	Mobile animations must be softer
+
+⸻
+
+3D & VISUALS
+
+AiONIQ supports 3D ONLY when it adds clarity or emotional value, not decoration.
+
+Examples:
+	•	Hero
+	•	Feature spotlight
+	•	Interaction concept visual
+
+Always require:
+	•	Mobile fallback
+	•	Lazy loading
+	•	No blocking scripts
+
+⸻
+
+PAGE LIST
+
+The project contains:
+	1.	Home
+	2.	What (Services)
+	3.	Why (Philosophy)
+	4.	How (Process)
+	5.	Who (Team)
+	6.	Work (Portfolio)
+	7.	Contact
+	8.	Blog (optional)
+	9.	Future dashboard module
+
+⸻
+
+STYLE & TONE GUIDELINES
+	•	Clean and premium
+	•	Minimal but expressive
+	•	Modern, intelligent, futuristic
+	•	No clutter
+	•	No childish visuals
+	•	No overly decorative UI
+	•	Structure > decoration
+
+Copy must be smart, concise, and slightly technical.
+
+⸻
+
+DEVELOPMENT RULES
+	•	Use Next.js app router and file conventions
+	•	Use Tailwind for layout, spacing, colors, responsive logic
+	•	Use shadcn/ui for base components
+	•	Use Framer Motion for micro animations
+	•	All components must be reusable
+	•	Respect container widths
+	•	Always ask clarifying questions for large features
+	•	Never assume complex structures
+
+⸻
+
+WHEN IN DOUBT — ASK FIRST
+
+ChatGPT must always ask before generating:
+	•	New pages
+	•	New components
+	•	Major layout decisions
+	•	Animation-heavy sections
+	•	3D/Spline integrations
+
+Examples of good clarifying questions:
+	•	“Should this use the 1280px or 1440px container?”
+	•	“Is this section text-heavy or visual?”
+	•	“Should the animation trigger on scroll or hover?”
+	•	“Do you want Spline 3D or static visuals here?”

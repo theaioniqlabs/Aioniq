@@ -1,0 +1,27 @@
+{
+  "server": {
+    "name": "firecrawl-mcp",
+    "version": "1.0.0",
+    "description": "Firecrawl MCP server for large-scale web crawling"
+  },
+  "command": {
+    "type": "npx",
+    "package": "firecrawl-mcp",
+    "args": ["-y", "firecrawl-mcp"]
+  },
+  "authentication": {
+    "type": "api-key",
+    "apiKeyEnvVar": "FIRECRAWL_API_KEY"
+  },
+  "capabilities": {
+    "crawl": {
+      "enabled": true,
+      "description": "Crawl and extract content from websites"
+    },
+    "scrape": {
+      "enabled": true,
+      "description": "Scrape individual pages"
+    }
+  }
+}
+

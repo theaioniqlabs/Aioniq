@@ -1,0 +1,69 @@
+:root{
+  /* Colors - from ui/colors.json */
+  --foreground: #0A0A0A;
+  --background: #FFFFFF;
+  --primary: #0A0A0A;
+  --primary-foreground: #FFFFFF;
+  --border: #E6E9EB;
+  --muted: #6B7280;
+  --accent: hsl(195, 90%, 55%);
+
+  /* Containers - from ui/layout-widths.json */
+  --container-marketing: 1280px;
+  --container-visual: 1440px;
+  --container-showcase: 1728px;
+  --container-app: 1800px;
+  
+  /* Legacy container names for compatibility */
+  --container-1280: 1280px;
+  --container-1440: 1440px;
+  --container-1600: 1600px;
+  --container-1800: 1800px;
+
+  /* Spacing - from ui/tokens.json */
+  --spacing-4: 0.25rem;
+  --spacing-8: 0.5rem;
+  --spacing-12: 0.75rem;
+  --spacing-16: 1rem;
+  --spacing-20: 1.25rem;
+  --spacing-24: 1.5rem;
+  --spacing-32: 2rem;
+  --spacing-40: 2.5rem;
+  --spacing-48: 3rem;
+  --spacing-64: 4rem;
+  
+  /* Legacy spacing names for compatibility */
+  --space-xs: 4px;
+  --space-sm: 8px;
+  --space-md: 16px;
+  --space-lg: 24px;
+  --space-xl: 40px;
+
+  /* Radii - from ui/tokens.json */
+  --radius-sm: 0.25rem;
+  --radius-md: 0.5rem;
+  --radius-lg: 0.75rem;
+
+  /* Typography - from ui/typography.json */
+  --font-display: var(--font-google-sans-flex), 'Google Sans Flex', system-ui, sans-serif;
+  --font-sans: var(--font-google-sans-flex), 'Google Sans Flex', system-ui, sans-serif;
+  --display-1-size: 3rem;
+  --display-1-lh: 3.5rem;
+  --h1-size: 2.25rem;
+  --h1-lh: 2.75rem;
+  --h2-size: 1.75rem;
+  --h2-lh: 2.25rem;
+  --h3-size: 1.25rem;
+  --h3-lh: 1.75rem;
+  --body-md-size: 1rem;
+  --body-md-lh: 1.5rem;
+  --body-sm-size: 0.875rem;
+  --body-sm-lh: 1.25rem;
+  --caption-size: 0.75rem;
+  --caption-lh: 1rem;
+}
+
+/* prefer reduced motion */
+@media (prefers-reduced-motion: reduce) {
+  :root { --reduce-motion: 1; }
+}

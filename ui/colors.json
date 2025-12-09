@@ -1,0 +1,30 @@
+{
+  "light": {
+    "foreground": "#0A0A0A",
+    "background": "#FFFFFF",
+    "primary": "#0A0A0A",
+    "primary-foreground": "#FFFFFF",
+    "muted": "#6B7280",
+    "border": "#E6E9EB",
+    "accent": "hsl(195, 90%, 55%)"
+  },
+  "dark": {
+    "foreground": "#FFFFFF",
+    "background": "#0A0A0A",
+    "primary": "#FFFFFF",
+    "primary-foreground": "#0A0A0A",
+    "muted": "#9CA3AF",
+    "border": "#374151",
+    "accent": "hsl(195, 90%, 65%)"
+  },
+  "semantic": {
+    "color-foreground": "var(--color-foreground)",
+    "color-background": "var(--color-background)",
+    "color-primary": "var(--color-primary)",
+    "color-primary-foreground": "var(--color-primary-foreground)",
+    "color-muted": "var(--color-muted)",
+    "color-border": "var(--color-border)",
+    "color-accent": "var(--color-accent)"
+  }
+}
+

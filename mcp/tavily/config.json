@@ -1,0 +1,23 @@
+{
+  "server": {
+    "name": "tavily-mcp",
+    "version": "1.0.0",
+    "description": "Tavily MCP server for structured web search and extraction"
+  },
+  "endpoint": {
+    "url": "https://tavily.api.tadata.com/mcp/tavily/noun-stream-donut-skpasx",
+    "type": "tavily-api"
+  },
+  "authentication": {
+    "type": "api-key",
+    "apiKeyEnvVar": "TAVILY_API_KEY",
+    "headerName": "X-API-Key"
+  },
+  "capabilities": {
+    "search": {
+      "enabled": true,
+      "description": "Structured web search and content extraction"
+    }
+  }
+}
+

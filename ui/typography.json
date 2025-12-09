@@ -1,0 +1,55 @@
+{
+  "fonts": {
+    "display": "Google Sans Flex, system-ui, sans-serif",
+    "sans": "Google Sans Flex, system-ui, sans-serif"
+  },
+  "sizes": {
+    "display-1": {
+      "fontSize": "3rem",
+      "lineHeight": "3.5rem",
+      "fontFamily": "display"
+    },
+    "h1": {
+      "fontSize": "2.25rem",
+      "lineHeight": "2.75rem",
+      "fontFamily": "display"
+    },
+    "h2": {
+      "fontSize": "1.75rem",
+      "lineHeight": "2.25rem",
+      "fontFamily": "display"
+    },
+    "h3": {
+      "fontSize": "1.25rem",
+      "lineHeight": "1.75rem",
+      "fontFamily": "sans"
+    },
+    "body-md": {
+      "fontSize": "1rem",
+      "lineHeight": "1.5rem",
+      "fontFamily": "sans"
+    },
+    "body-sm": {
+      "fontSize": "0.875rem",
+      "lineHeight": "1.25rem",
+      "fontFamily": "sans"
+    },
+    "caption": {
+      "fontSize": "0.75rem",
+      "lineHeight": "1rem",
+      "fontFamily": "sans"
+    }
+  },
+  "semantic": {
+    "font-display": "var(--font-display)",
+    "font-sans": "var(--font-sans)",
+    "font-size-display-1": "var(--font-size-display-1)",
+    "font-size-h1": "var(--font-size-h1)",
+    "font-size-h2": "var(--font-size-h2)",
+    "font-size-h3": "var(--font-size-h3)",
+    "font-size-body-md": "var(--font-size-body-md)",
+    "font-size-body-sm": "var(--font-size-body-sm)",
+    "font-size-caption": "var(--font-size-caption)"
+  }
+}
+

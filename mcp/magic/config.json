@@ -1,0 +1,26 @@
+{
+  "server": {
+    "name": "magic-mcp",
+    "version": "1.0.0",
+    "description": "Magic MCP server for frontend automation and UI component generation"
+  },
+  "command": {
+    "type": "npx",
+    "package": "21st-dev/magic@latest"
+  },
+  "authentication": {
+    "type": "api-key",
+    "apiKeyEnvVar": "MAGIC_API_KEY"
+  },
+  "capabilities": {
+    "component-generation": {
+      "enabled": true,
+      "description": "Generate UI components from descriptions"
+    },
+    "ui-automation": {
+      "enabled": true,
+      "description": "Automate frontend UI tasks"
+    }
+  }
+}
+

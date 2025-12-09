@@ -1,0 +1,23 @@
+{
+  "containers": {
+    "container-marketing": "1280px",
+    "container-visual": "1440px",
+    "container-showcase": "1728px",
+    "container-app": "1800px"
+  },
+  "padding": {
+    "desktop": "2.5rem",
+    "desktop-large": "3rem",
+    "tablet": "1.5rem",
+    "tablet-small": "1rem",
+    "mobile": "1rem",
+    "mobile-small": "0.75rem"
+  },
+  "semantic": {
+    "container-marketing": "var(--container-marketing)",
+    "container-visual": "var(--container-visual)",
+    "container-showcase": "var(--container-showcase)",
+    "container-app": "var(--container-app)"
+  }
+}
+
