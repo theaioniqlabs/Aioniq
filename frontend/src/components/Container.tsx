@@ -18,7 +18,7 @@ export const Container: React.FC<ContainerProps> = ({ children, size = '1280', c
   const sizeMap: Record<string, keyof typeof tokens.containers> = {
     'marketing': '1280',
     'visual': '1440',
-    'showcase': '1600',
+    'showcase': '1728', // Note: showcase is 1728px, not 1600px
     'app': '1800',
   };
   

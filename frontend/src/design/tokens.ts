@@ -11,7 +11,7 @@ export const tokens = {
   containers: {
     '1280': 'var(--container-1280)',
     '1440': 'var(--container-1440)',
-    '1600': 'var(--container-1600)',
+    '1728': 'var(--container-showcase)', // showcase container (1728px)
     '1800': 'var(--container-1800)'
   },
   spacing: {

@@ -1,9 +1,9 @@
-import './styles/variables.css';
-import '../styles/globals.css';
+import '@/styles/variables.css';
+import '@/styles/globals.css';
 import React from 'react';
-import Header from '../components/layout/Header';
-import Footer from '../components/layout/Footer';
-import { googleSansFlex } from '../lib/fonts';
+import Header from '@/components/layout/Header';
+import Footer from '@/components/layout/Footer';
+import { googleSansFlex } from '@/lib/fonts';
 
 export const metadata = {
   title: 'AiONIQ Labs',
