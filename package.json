@@ -1,0 +1,25 @@
+{
+  "name": "aioniq-labs",
+  "version": "0.1.0",
+  "private": true,
+  "description": "AiONIQ Labs — hybrid digital studio & intelligent product environment",
+  "scripts": {
+    "dev": "pnpm --filter frontend dev",
+    "build": "pnpm --filter frontend build",
+    "start": "pnpm --filter frontend start",
+    "lint": "pnpm --filter frontend lint",
+    "type-check": "pnpm --filter frontend type-check",
+    "test": "pnpm --filter frontend test",
+    "test:watch": "pnpm --filter frontend test:watch",
+    "e2e": "pnpm --filter frontend e2e",
+    "format": "pnpm --filter frontend format",
+    "token:scan": "pnpm --filter frontend token:scan",
+    "scan:unused": "pnpm --filter frontend scan:unused"
+  },
+  "engines": {
+    "node": ">=20.0.0",
+    "pnpm": ">=8.0.0"
+  },
+  "packageManager": "pnpm@8.15.0"
+}
+

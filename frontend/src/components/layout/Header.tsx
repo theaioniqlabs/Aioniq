@@ -18,10 +18,10 @@ export const Header: React.FC = () => {
   const path = usePathname() || '/';
   return (
     <header className="border-b" role="banner" style={{ borderColor: 'var(--border)' }}>
-      <Container className="py-4 flex items-center justify-between">
+      <Container className="py-16 flex items-center justify-between">
         <Link href="/" className="text-xl font-display" aria-label="AiONIQ Home">AiONIQ</Link>
         <nav aria-label="Main navigation">
-          <ul className="flex gap-6 text-sm">
+          <ul className="flex gap-24 text-sm">
             {NAV.map((item) => {
               const isActive = item.href === '/' ? path === '/' : path.startsWith(item.href);
               return (

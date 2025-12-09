@@ -3,27 +3,27 @@
     "github": {
       "url": "https://api.githubcopilot.com/mcp/",
       "headers": {
-        "Authorization": "Bearer YOUR_GITHUB_TOKEN_HERE"
+        "Authorization": "Bearer ${GITHUB_TOKEN}"
       }
     },
     "tavily": {
       "url": "https://tavily.api.tadata.com/mcp/tavily/noun-stream-donut-skpasx",
       "headers": {
-        "X-API-Key": "YOUR_TAVILY_API_KEY_HERE"
+        "X-API-Key": "${TAVILY_API_KEY}"
       }
     },
     "firecrawl-mcp": {
       "command": "npx",
       "args": ["-y", "firecrawl-mcp"],
       "env": {
-        "FIRECRAWL_API_KEY": "YOUR_FIRECRAWL_API_KEY_HERE"
+        "FIRECRAWL_API_KEY": "${FIRECRAWL_API_KEY}"
       }
     },
     "magic-mcp": {
       "command": "npx",
       "args": ["-y", "21st-dev/magic@latest"],
       "env": {
-        "MAGIC_API_KEY": "YOUR_MAGIC_API_KEY_HERE"
+        "MAGIC_API_KEY": "${MAGIC_API_KEY}"
       }
     }
   }

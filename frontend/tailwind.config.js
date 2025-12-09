@@ -11,7 +11,20 @@ module.exports = {
   ],
   theme: {
     extend: {
-      spacing: tokens.spacing,
+      spacing: {
+        ...tokens.spacing,
+        // Map numeric values for Tailwind utilities (py-16, px-4, etc.)
+        '4': tokens.spacing['spacing-4'],
+        '8': tokens.spacing['spacing-8'],
+        '12': tokens.spacing['spacing-12'],
+        '16': tokens.spacing['spacing-16'],
+        '20': tokens.spacing['spacing-20'],
+        '24': tokens.spacing['spacing-24'],
+        '32': tokens.spacing['spacing-32'],
+        '40': tokens.spacing['spacing-40'],
+        '48': tokens.spacing['spacing-48'],
+        '64': tokens.spacing['spacing-64'],
+      },
       borderRadius: tokens.radius,
       colors: {
         foreground: colors.light.foreground,
