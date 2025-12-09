@@ -19,18 +19,18 @@ Both files are gitignored.
 - **Get from**: https://github.com/settings/tokens
 
 ### Tavily MCP
-- **API Key**: `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`
+- **API Key**: `YOUR_TAVILY_API_KEY_HERE` (format: `tvly-dev-...`)
 - **Endpoint**: `https://tavily.api.tadata.com/mcp/tavily/noun-stream-donut-skpasx`
 - **Location**: `.env.local` as `TAVILY_API_KEY`
 - **Get from**: https://tavily.com
 
 ### Firecrawl MCP
-- **API Key**: `fc-429c68e5aec84583a7d5b0d849dbfdbb`
+- **API Key**: `YOUR_FIRECRAWL_API_KEY_HERE` (format: `fc-...`)
 - **Location**: `.env.local` as `FIRECRAWL_API_KEY`
 - **Get from**: https://www.firecrawl.dev/
 
 ### Magic MCP
-- **API Key**: `9cdb2c758420517df43f40a26ba92824ad9a224f7a8767035539898671c535ba`
+- **API Key**: `YOUR_MAGIC_API_KEY_HERE` (format: hex string)
 - **Package**: `21st-dev/magic@latest`
 - **Location**: `.env.local` as `MAGIC_API_KEY`
 - **Get from**: https://21st.dev

@@ -19,12 +19,17 @@ dist/
 *.seed
 *.pid.lock
 
-# Environment variables
+# Environment variables and credentials
 .env
+.env.*
+*.env
 .env.local
 .env.development.local
 .env.test.local
 .env.production.local
+.env.example
+*.env.example
+**/.env.example
 
 # Debug
 npm-debug.log*
@@ -43,15 +48,31 @@ lerna-debug.log*
 
 # Cursor IDE MCP configuration (may contain tokens)
 .cursor/mcp.json
+.cursor/**/*.json
 
-# Environment example files that may contain secrets
-**/.env.example
-mcp/**/.env.example
+# Credentials and API keys - NEVER COMMIT THESE
+*cred*.txt
+*cred*.md
+*credentials*
+*secrets*
+*api-keys*
+*tokens*.txt
+**/All MCP cred.txt
+**/*cred.txt
+**/*credentials*.md
+**/*secrets*.md
+**/*api-keys*.md
+
+# Files that may contain actual credentials (use placeholders in docs)
+# Note: credentials-reference.md should only contain placeholders, not real keys
 
 # Temporary local work files
 workspace_storage/
 temp Folder/
 "@@temp Folder/"
+@@temp Folder/
+**/temp Folder/
+**/@@temp Folder/
 
 # TypeScript
 *.tsbuildinfo
